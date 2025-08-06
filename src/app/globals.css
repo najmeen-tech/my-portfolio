@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Londrina {
+  font-family: "Londrina Outline", serif;
+}
+body {
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #fafff3;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  cursor: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    cursor: auto;
+  }
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px; /* 6 units in Tailwind */
+  height: 30px; /* 6 units in Tailwind */
+  background-color: #fff; /* Change to your desired color */
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 50;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .custom-cursor {
+    display: none;
+  }
+}
+span#experience:after {
+  content: "+";
+}
