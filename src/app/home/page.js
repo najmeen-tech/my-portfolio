@@ -10,7 +10,7 @@ function page() {
       <Hero />
       <Skills />
       <Projects />
-      <WorkExperience />
+      {/* <WorkExperience /> */}
       <Contact />
     </div>
   );

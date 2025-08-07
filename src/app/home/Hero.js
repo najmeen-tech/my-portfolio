@@ -2,15 +2,15 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import SHBhati from "@/assets/img/s.h.bhati.jpeg";
+
 import { gsap } from "gsap";
 
 function Hero() {
   useEffect(() => {
     const numbers = [
-      { element: document.querySelector("#experience"), endValue: 5 },
-      { element: document.querySelector("#projects"), endValue: 145 },
-      { element: document.querySelector("#clients"), endValue: 124 },
+      { element: document.querySelector("#experience"), endValue: 10 },
+      { element: document.querySelector("#projects"), endValue: 232 },
+      { element: document.querySelector("#clients"), endValue: 164 },
     ];
 
     numbers.forEach(({ element, endValue }, index) => {
@@ -47,13 +47,13 @@ function Hero() {
 
        
         </div>
-        <div className="col-span-5 flex justify-center items-center">
+        <div className="col-span-5 flex justify-center items-center">      
           <Image
-            src={SHBhati}
-            alt="s.h.bhati front end developer"
+            src="/web-design.png"
+            alt="najmeen front end developer"
             width={400}
             height={400}
-            className=" rounded-xl rotate-3 hover:rotate-0 transition-all duration-300 ease-in-out shadow-xl lg:w-[300px] lg:h-[300px] md:w-[400px] md:h-[400px] w-[250px] h-[250px]"
+            className=" "
           />
         </div>
       </div>
